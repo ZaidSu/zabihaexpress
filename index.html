@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zabiha Express</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/core/main.min.css' rel='stylesheet' />
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/daygrid/main.min.css' rel='stylesheet' />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/core/main.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/daygrid/main.min.js'></script>
+    <link rel="icon" href="/client/images/zabihafavicon.png">
+
+</head>
+<body>
+    <header>
+        <img id="zabihaLogo" src="client/images/ZabihaLogo.png">
+        <h3>Zabiha Express</h3>
+        <nav>
+            <ul>
+                <li><a>Home</a></li>
+                <li><a href="#menuSection">Menu</a></li>
+                <li><a href="#bookingSection">Booking</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="secondHeader">
+        <h1>Fresh Zabiha Halal Food</h1>
+        <p id="menuSection">
+            100% Hand Slaughtered Zabiha Halal Meat.
+            Our meat is from Green Valley Market which is a <a href="https://www.hmsusa.org/" target="_blank">HMS</a> Certified meat shop.
+            Having delicious foods at your event is essential. We are here to make that happen! A Zabiha Halal Food Catering business in Dallas Texas!
+        </p>
+    </div>
+
+    <div class="firstImg">
+        <img id="mainImg" src="client/images/biryaniImg.JPG">
+        <div class="ratings">
+            <a href="client/ratings/ratings.html">Ratings - Give Us A Rate</a>
+            <div class="stars">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="viewOptions">
+        <h1 id="optionsTxt">View Our Options <i class="fa-solid fa-magnifying-glass"></i></h1>
+        <div class="arrow left-arrow" onclick="moveSlide(-1)"><i class="fa-solid fa-arrow-left"></i></div>
+            <div class="foods">
+                <div class="burger">
+                    <div id="insideImg">
+                        <h1>🍔</h1>
+                    </div>
+                    <p>Burger</p>
+                </div>
+
+                <div class="biryani">
+                    <div id="insideImg">
+                        <img id="biryaniEmoji" src="client/images/biryaniEmoji.png">
+                    </div>
+                    <p>Biryani</p>
+                </div>
+
+                <div class="tikka">
+                    <div id="insideImg">
+                        <img id="tikkaEmoji" src="client/images/tikkaEmoji.png">
+                    </div>
+                    <p>Chicken Tikka</p>
+                </div>
+
+                <div class="pizza">
+                    <div id="insideImg">
+                        <h1>🍕</h1>
+                    </div>
+                    <p>Pizza</p>
+                </div>
+
+                <div class="example">
+                    <div id="insideImg">
+                        <h1>🍪</h1>
+                    </div>
+                    <p>Kabob</p>
+                </div>
+            </div>
+        <div class="arrow right-arrow" onclick="moveSlide(1)"><i class="fa-solid fa-arrow-right"></i></div>
+    </div>
+
+
+    <section class="secondBody">
+        <div class="booking" id="bookingSection">
+            <h1>Reserve Us For Your Event!</h1>
+            <div class="booking-form-container">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd-pTOwKuj7x0ep6E2puB-rfpr8oeXmd9vQcwHyBEO_Mlp7Iw/viewform?embedded=true" class="googleForm" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </div>
+
+        <div class="reservations">
+            <h1>Where Will We Be?</h1>
+            <div id="calendar"></div>
+        </div>
+        </section>
+    </section>
+<!--
+    Maybe Some Time In Future <!>
+    <section class="secondBody">
+    <div class="booking" id="bookingSection">
+        <h1>Reserve Us For Your Event!</h1>
+        <div class="booking-form-container">
+            <form id="bookingForm" class="booking-form" action="http://localhost:3000/submit-booking">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    <textarea id="details" name="message" placeholder="Event Details: We have a wedding on... and we would like to..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit Request</button>
+                </div>
+            </form>
+        </div>
+    </div>
+-->
+
+<footer>
+    <div class="footer-content">
+        <div class="contact">
+            <p class="subheader">Contacts</p>
+            <p>Phone Number: (469) 556-0675</p>
+            <p>Email: zabihaexpress@gmail.com</p>
+        </div>
+        <div class="social-media">
+            <p>Connect with Us!</p>
+            <a href="https://www.facebook.com/profile.php?id=61558668427245&mibextid=LQQJ4d&rdid=4gpNYfaCLoFFOcfV&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FzZegtBxZM8G1qvaA%2F%3Fmibextid%3DLQQJ4d" target="_blank"><img src="/client/images/facebook.png" style="height: 40px;"></a>
+            <a href="https://x.com/zabihaexpress" target="_blank"><img src="/client/images/twitter.png" style="height: 40px;"></a>
+            <a href="https://www.instagram.com/zabihaexpress/" target="_blank"><img src="/client/images/insta.png" style="height: 40px;"></a>
+        </div>
+    </div>
+    <div class="footer-note">© Zabiha Express</div>
+</footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/f0c69cac97.js" crossorigin="anonymous"></script>
+</body>
+</html>

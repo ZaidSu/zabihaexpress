@@ -1,0 +1,618 @@
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;}
+
+body {
+    overflow-x: hidden;
+    font-family: "Lora", sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#zabihaLogo {
+    width: 100px;
+    position: absolute;
+    left: 15px;
+    top: 5px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+header h3 {
+    position: absolute;
+    right: 20px;
+    margin: 0; 
+    padding: 0; 
+}
+
+nav {
+    text-align: center
+}
+
+nav ul {
+    display: inline-flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+    width: 100%; 
+}
+
+nav ul li {
+    margin: 0 10px; 
+}
+
+nav ul li a {
+    font-size: 19px;
+    padding: 5px; 
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    transform: scale(1.15);
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+}
+
+/*
+<!> <!> Second Header <!> <!>
+*/
+
+.secondHeader {
+    position: relative;
+    font-family: "Tilt Neon", "Lora", sans-serif;
+    padding: 50px;
+    top: 20px;
+    width: 450px;
+}
+
+.secondHeader h1 {text-align: center;}
+
+.secondHeader a {
+    text-decoration: none;
+    color: rgb(120, 120, 247);
+    font-weight: 700;
+}
+
+.secondHeader a:hover {text-decoration: underline;}
+
+.secondHeader p {
+    width: 500px;
+    line-height: 25px;
+}
+
+/*
+<!> <!> Main Image <!> <!>
+*/
+
+.firstImg {
+    font-family: "Arvo", "Lora", sans-serif;
+    position: relative;
+}
+
+#mainImg {
+    position: absolute;
+    right: 70px;
+    top: -250px;
+    width: 600px;
+    border-radius: 30px;
+}
+
+.ratings {
+    position: absolute;
+    right: 70px;
+    top: 170px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    height: 50px;
+    width: 560px;
+    background-color: rgb(28, 28, 28);
+    color: rgb(235, 228, 184);
+    border-radius: 15px;
+    padding: 0 20px; 
+}
+
+
+.ratings .stars {
+    display: flex;
+    cursor: pointer;
+}
+
+.ratings a {
+    color: rgb(235, 228, 184);
+    position: relative;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ratings a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+/*
+<!> <!> Viewing Options <!> <s!>
+*/
+
+.viewOptions {
+    font-family: "Lora", sans-serif;
+    position: relative;
+    right: -50px;
+    width: 500px;
+}
+
+.viewOptions h1 {
+    margin-bottom: 0px;
+}
+
+#optionsTxt {
+    position: absolute;
+    left: 60px;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+    font-size: 35px;
+    color: #333;
+    padding: 0px;
+    user-select: none;
+    z-index: 2;
+}
+
+.left-arrow {
+    left: -40px;
+}
+
+.right-arrow {
+    left: 440px;
+}
+
+.arrow:hover {
+    color: #626262;
+}
+
+.foods {
+    position: relative;
+    display: flex;
+    top: 50px;
+    gap: 15px;
+    padding: 20px;
+    right: 20px;
+}
+
+.foods div {
+    border-radius: 45px;
+    width: 120px;
+    height: 160px; 
+    background-color: #423c3c;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+}
+
+.foods div#insideImg {
+    background-color: #ffffff;
+    border-radius: 50%; 
+    width: 70px; 
+    height: 70px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.foods div#insideImg h1 {
+    position: relative;
+    font-size: 45px;
+    top: -20px;
+}
+
+.foods div p {
+    margin: 4px 0;
+    font-weight: bold;
+    color: white;
+}
+
+.foods div.burger,  .foods div.pizza, .foods div.tikka{
+    background-color: #423c3c;
+    transform: scale(1.0);
+    z-index: 1; 
+}
+
+#biryaniEmoji {width: 80px;}
+
+#tikkaEmoji {width: 75px;}
+
+.viewOptions .foods > div {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.viewOptions .foods > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,1);
+}
+
+.foods #insideImg {
+    cursor: pointer;
+}
+
+/*---------------------------*/
+.secondBody {
+    width: 100%;
+    height: 750px;
+}
+
+/*
+<!> <!> Booking <!> <!>
+*/
+
+.booking {
+    position: relative;
+    font-family: "Tilt Neon", "Lora", sans-serif;
+}
+
+.booking h1 {
+    position: absolute;
+    padding: 50px;
+    top: 35px;
+    text-align: center;
+    left: 55px !important;
+    font-size: 30px;
+}
+
+.booking-form-container {
+    position: absolute;
+    top: 150px;
+    max-width: 450px;
+    height: 45px;
+    padding: 20px;
+    left: 40px;
+    /*background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;*/
+}
+
+.googleForm {
+    position: relative;
+    width: 500px; 
+    height: 480px;
+    right: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/*
+.form-group {margin-bottom: 15px;}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea {
+    width: 450px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    transition: all 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #eef4ff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-group textarea {
+    height: 100px; 
+    resize: vertical; 
+}
+
+.form-group button {
+    position: absolute;
+    background-color: #2c3e50; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    right: 35%;
+}
+
+.form-group button:hover {
+    background-color: #727e89;
+}
+*/
+
+
+/*
+<!> <!> Reservations <!> <!>
+*/
+
+.reservations {
+    position: relative;
+    font-family: "Tilt Neon", "Lora", sans-serif;
+}
+
+.reservations h1 {
+    position: absolute;
+    padding: 50px;
+    top: 20px;
+    width: 600px;
+    text-align: center;
+    right: 50px;
+    font-size: 30px;
+}
+
+#calendar {
+    position: absolute;
+    width: 600px;
+    right: 70px;
+    top: 120px;
+}
+
+.fc-event, .fc-event-dot {
+    text-align: center;
+    background-color: rgb(183, 11, 11) !important;
+}
+
+.fc-day.fc-widget-content.fc-today {
+    background-color: #ffcccc !important;
+}
+
+.fc-day-grid-event.fc-h-event.fc-event.fc-start.fc-end {
+    cursor: pointer;
+}
+
+
+/*
+<!> <!> PARTNERS <!> <!>
+*/
+
+.partners {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%; 
+    margin-top: 50px; 
+    padding: 20px 0; 
+    position: relative;
+    bottom: initial;
+    z-index: 10;
+    transform: none; 
+    font-family: "Tilt Neon", "Lora", sans-serif;
+    top: 720px;
+}
+
+#islamInsightImg {
+    height: 100px; 
+    margin: 0 20px; 
+    position: relative; 
+    left: auto; 
+    top: auto; 
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#islamInsightImg:hover {
+    transform: translateY(-5px) scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.partners h1 {
+    position: absolute;
+    top: -120px;
+    font-size: 50px;
+}
+
+#islamInsightImg {
+    border-radius: 25px;
+    box-shadow: 3px 8px 15px rgba(0,  0, 0, .5);
+    height: 70px;
+}
+
+
+/* =================================*/
+
+footer {
+    width: 100%;
+    background-color: #423c3c;
+    color: white;
+    text-align: center;
+    padding: 20px; 
+    font-family: "Tilt Neon";
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact {
+    text-align: left;
+}
+
+.social-media {
+    text-align: right;
+}
+
+.social-media a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    right: 70px;
+    top: 8px;
+}
+
+.social-media p {
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+    right: 60px;
+}
+
+footer p {margin: 0;}
+
+.contact p {font-size: 16px;}
+
+.contact p.subheader {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.footer-note {
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 730px) {
+    #zabihaLogo {
+        width: 65px;
+        left: 5px;
+    }
+    header h3 {
+        position: absolute;
+        right: 20px;
+    }
+    nav {
+        position: relative;
+        top: 50px;
+        right: 10px;
+    }
+
+    nav ul li a {font-size: 23px;}
+
+    #mainImg {display: none;}
+
+    .secondHeader {
+        right: 15%;
+        text-align: center;
+    }
+    .secondHeader h1 {
+        position: relative;
+        text-align: center;
+    }
+    .secondHeader p {
+	position: relative;
+	font-size: 18px;
+	width: 350px;
+	right: -47px;
+    }
+    #optionsTxt {
+    	position: absolute;
+    	left: 10px;
+    }
+    .viewOptions {
+	width: 350px;
+        top: -20px;
+        left: 50px;
+    }
+    .left-arrow {
+   	left: -40px;
+    }
+
+    .right-arrow {
+	left: 335px;
+    }
+
+    .ratings {
+        top: 250px;
+        left: 10px;
+        width: 370px;
+    }
+    .secondBody {
+        height: 1130px;
+    }
+    .reservations h1 {
+        top: 40px;
+        left: -135px;
+        font-size: 35px;
+    }
+    #calendar {
+        top: 170px;
+        left: 25px;
+        width: 370px;
+    }
+    .booking {
+        top: 410px;
+	    width: 370px;
+    }
+    .booking h1 {
+	    left: -25px;
+        width: 100%;
+        top: 50px;
+        font-size: 35px;
+    }
+    /*
+    .booking-form-container {
+        height: 25px;
+        border-radius: 20px;
+	    width: 350px;
+	    left: 20px;
+	    top: 230px;
+    }
+    .booking-form-container a {
+        text-align: center;
+        position: relative;
+        left:30px;
+    }
+    */
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group textarea {
+        padding: 10px;
+        font-size: 17px;
+	width: 350px;
+    }
+    .form-group button { 
+	right: 85px;
+	padding: 15px 50px;
+    }
+
+    footer {
+        font-size: 20px;
+        height: 40px;
+    }
+}
