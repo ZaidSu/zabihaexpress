@@ -39,6 +39,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 url: 'https://iant.com'
             },
             {
+                title: 'MAS Dallas',
+                start: '2024-06-08',
+                end: '2024-06-08',
+                url: ''
+            },
+            {
                 title: 'Mekkah Masjid',
                 start: '2024-06-15',
                 end: '2024-06-15',

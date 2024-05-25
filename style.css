@@ -392,7 +392,7 @@ nav ul li a:hover {
 
 .fc-event, .fc-event-dot {
     text-align: center;
-    background-color: rgb(183, 11, 11) !important;
+    background-color: rgb(186, 12, 12) !important;
 }
 
 .fc-day.fc-widget-content.fc-today {
@@ -579,40 +579,41 @@ footer p {margin: 0;}
 	    width: 370px;
     }
     .booking h1 {
-	    left: -25px;
-        width: 100%;
-        top: 50px;
-        font-size: 35px;
-    }
-    /*
-    .booking-form-container {
-        height: 25px;
-        border-radius: 20px;
-	    width: 350px;
-	    left: 20px;
-	    top: 230px;
-    }
-    .booking-form-container a {
+        position: absolute;
+        padding: 50px;
+        top: 35px;
         text-align: center;
-        position: relative;
-        left:30px;
+        left: 55px !important;
+        font-size: 30px;
     }
-    */
-    .form-group input[type="text"],
-    .form-group input[type="email"],
-    .form-group input[type="tel"],
-    .form-group textarea {
-        padding: 10px;
-        font-size: 17px;
-	width: 350px;
-    }
-    .form-group button { 
-	right: 85px;
-	padding: 15px 50px;
+    
+    .googleForm {
+        width: 370px; 
+        height: 480px;
+        right: 31px;
+        top: 25px;
     }
 
-    footer {
-        font-size: 20px;
-        height: 40px;
+    .social-media p {
+        font-size: 18px;
+        right: 40px;
+    }
+    .social-media img {
+        height: 35px !important;
+    }
+    .social-media a {
+        right: 45px;
+    }
+    
+    footer p {margin: 0;}
+    
+    .contact p {font-size: 15px;}
+    
+    .contact p.subheader {
+        font-size: 17px;
+    }
+    
+    .footer-note {
+        font-size: 19px;
     }
 }
