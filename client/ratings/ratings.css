@@ -1,5 +1,7 @@
 
-html {scroll-behavior: smooth;}
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: "Lora", sans-serif;
@@ -263,4 +265,26 @@ nav ul li a:hover {
 .review-form .fa-star:hover,
 .review-form .fa-star.fa-solid {
     color: #f0ad4e; 
+}
+
+@media screen and (max-width: 730px) {
+    #zabihaLogo {
+        width: 65px;
+        left: 5px;
+    }
+    header h3 {
+        position: absolute;
+        right: 20px;
+    }
+    nav {
+        position: relative;
+        top: 50px;
+        right: 10px;
+    }
+    
+    nav ul li a {font-size: 23px;}
+
+    .googleForm {
+        width: 400px;
+    }
 }
