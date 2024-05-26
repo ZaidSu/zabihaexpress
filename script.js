@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 title: 'MAS Dallas',
                 start: '2024-06-08',
                 end: '2024-06-08',
-                url: 'https://masdfw.org/'
+                url: ''
             },
             {
                 title: 'Mekkah Masjid',

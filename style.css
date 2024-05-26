@@ -248,6 +248,8 @@ nav ul li a:hover {
 
 #tikkaEmoji {width: 75px;}
 
+#kabob {width: 80px;}
+
 .viewOptions .foods > div {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
