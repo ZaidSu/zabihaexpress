@@ -39,10 +39,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 url: 'https://iant.com'
             },
             {
+                title: 'ICF',
+                start: '2024-06-02',
+                end: '2024-06-02',
+                url: 'https://friscomasjid.org/programs/events-this-week/palestine-reclaiming-the-narrative-motivating-our-activism'
+            },
+            {
                 title: 'MAS Dallas',
                 start: '2024-06-08',
                 end: '2024-06-08',
-                url: ''
+                url: 'https://www.facebook.com/events/947320600411753/?ref=newsfeed'
             },
             {
                 title: 'Mekkah Masjid',
