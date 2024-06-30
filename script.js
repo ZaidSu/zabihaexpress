@@ -51,10 +51,22 @@ document.addEventListener('DOMContentLoaded', function() {
                 url: 'https://www.facebook.com/events/947320600411753/?ref=newsfeed'
             },
             {
+                title: 'Allen Masjid',
+                start: '2024-06-14',
+                end: '2024-06-14',
+                url: 'https://www.instagram.com/p/C8A-pMAAaTO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=='
+            },
+            {
                 title: 'Mekkah Masjid',
                 start: '2024-06-15',
                 end: '2024-06-15',
                 url: 'https://makkahmasjid.net/join-us-at-makkah-masjids-eid-bazaar/'
+            },
+            {
+                title: 'South Fork Ranch',
+                start: '2024-07-04',
+                end: '2024-07-04',
+                url: ''
             }
         ],
         eventClick: function(info) {
